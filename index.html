@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saraansh Gandhi - Frontend Developer & Creative Designer. Explore my portfolio showcasing modern web development projects and skills.">
+  <meta name="keywords" content="Frontend Developer, Web Developer, Portfolio, JavaScript, CSS, HTML, React">
+  <meta name="author" content="Saraansh Gandhi">
+  <title>Saraansh Gandhi - Frontend Developer Portfolio</title>
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="CSS/index.css" as="style">
+  <link rel="preload" href="JS/index.js" as="script">
+  <link rel="preload" href="images/Me.jpg" as="image">
+  
+  <link rel="stylesheet" href="CSS/index.css">
+  
+  <!-- Open Graph meta tags for social sharing -->
+  <meta property="og:title" content="Saraansh Gandhi - Frontend Developer Portfolio">
+  <meta property="og:description" content="Explore my portfolio showcasing modern web development projects and skills.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="#">
+</head>
+  
+<body>
+
+  <!-- Header -->
+  <header style="display: flex; justify-content: flex-end; align-items: center; padding: 0px 20px; position: sticky; top: 0; z-index: 100;">    
+    <div class="social-buttons" style="display: flex; gap: 10px;">
+      
+      <!-- LinkedIn Button -->
+      <button class="Trnsform"
+        onclick="window.open('https://www.linkedin.com/in/saraansh-gandhi-845403327/','_blank')"
+        aria-label="Visit LinkedIn profile"
+        style="
+          margin: 40px;
+          background-color: black; 
+          color: white; 
+          border: none;
+          padding: 8px 18px;
+          font-size: 14px;
+          cursor: pointer;
+          display: flex; 
+          align-items: center; 
+          gap: 8px;
+          box-shadow: none; 
+          animation: none;
+          font-weight: normal;
+          height: 60px;
+          width: auto;
+        ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.303-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+        </svg>
+        <span>LinkedIn</span>
+      </button>
+
+      <!-- GitHub Button -->
+      <button class="Trnsform"
+        onclick="window.open('https://github.com/Aprsh01','_blank')"
+        aria-label="Visit GitHub profile"
+        style="
+          margin: 40px 80px 0px 0px;
+          background-color: black; 
+          color: white; 
+          border: none;
+          padding: 8px 18px;
+          font-size: 14px;
+          cursor: pointer;
+          display: flex; 
+          align-items: center; 
+          gap: 8px;
+          box-shadow: none; 
+          animation: none;
+          font-weight: normal;
+          height: 60px;
+          width: auto;
+        ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.385 3.52 9.942 8.355 11.52.607.112.827-.26.827-.577 0-.285-.011-1.04-.017-2.04-3.415.744-4.123-1.642-4.123-1.642-.558-1.41-1.365-1.786-1.365-1.786-1.117-.76.088-.745.088-.745 1.236.088 1.884 1.272 1.884 1.272 1.096 1.882 2.893 1.336 3.593 1.02.112-.792.428-1.336.78-1.643-2.748-.313-5.638-1.374-5.638-6.103 0-1.347.484-2.446 1.285-3.313-.128-.313-.558-1.564.125-3.267 0 0 1.049-.333 3.434 1.266 1.002-.278 2.072-.416 3.132-.421 1.06.005 2.13.143 3.134.421 2.385-1.599 3.433-1.266 3.433-1.266.683 1.703.253 2.954.125 3.267.801.867 1.284 1.966 1.284 3.313 0 4.745-2.894 5.786-5.647 6.096.436.376.823 1.12.823 2.253 0 1.632-.015 2.946-.015 3.34 0 .319.215.694.829.576 4.834-1.581 8.351-6.138 8.351-11.521 0-6.627-5.372-12-12-12z"/>
+        </svg>
+        <span>GitHub</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="main-content" tabindex="-1">
+    <div id="HomePage" class="HomePage">
+      
+      <div class="LeftSide">
+        <img src="images/Me.jpg" alt="Saraansh Gandhi - Frontend Developer and Creative Designer" loading="eager">
+      </div>
+      
+      <div class="RightSide">
+        <h1 id="parag1" class="Intro-Page">Hello there :)</h1>
+        <p class="Intro-Page" style="text-align: center;">
+          I am Saraansh Gandhi, A Frontend Developer | A Creative Designer | A Problem Solver
+        </p>
+        <div class="cta-buttons">
+          <button id="skillsBtn" class="button-grad">About Me</button>
+          <button id="projectsBtn" class="button-grad secondary">View Projects</button>
+          <button id="contactBtn" class="button-grad tertiary">Contact Me</button>
+        </div>
+      </div>
+
+      <!-- Quick Navigation -->
+      <nav class="quick-nav" aria-label="Quick navigation menu">
+        <a href="About-me.html" class="nav-item">👤<span>About</span></a>
+        <a href="skill.html" class="nav-item">🛠️<span>Skills</span></a>
+        <a href="project.html" class="nav-item">💼<span>Projects</span></a>
+        <a href="goal.html" class="nav-item">🎯<span>Goals</span></a>
+      </nav>
+    </div>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <h2>Contact Me</h2>
+    <p>
+      Email: <a href="mailto:saraansh.gandhi.24cse@bmu.edu.in">saraansh.gandhi.24cse@bmu.edu.in</a> |
+      Contact: <a href="tel:+919354350572">9354350572</a>, <a href="tel:+917983554951">7983554951</a>
+    </p>
+    <p class="footer-copy">© 2025 Saraansh Gandhi | All Rights Reserved</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="JS/index.js" defer></script>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const snapshot = document.querySelector(".snapshot-container");
+      const footer = document.querySelector(".footer");
+
+      if (!snapshot || !footer) return;
+
+      const footerTop = footer.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      // If footer is about to enter view, show snapshot
+      if (footerTop <= windowHeight - 100) {
+        snapshot.classList.add("visible");
+      } else {
+        snapshot.classList.remove("visible");
+      }
+    });
+     // Make .quick-nav draggable
+    const nav = document.querySelector(".quick-nav");
+
+    let isDragging = false;
+    let offsetX, offsetY;
+
+    nav.addEventListener("mousedown", (e) => {
+      isDragging = true;
+      offsetX = e.clientX - nav.getBoundingClientRect().left;
+      offsetY = e.clientY - nav.getBoundingClientRect().top;
+      nav.style.transition = "none"; // disable smooth transition while dragging
+    });
+
+    document.addEventListener("mousemove", (e) => {
+      if (!isDragging) return;
+      let x = e.clientX - offsetX;
+      let y = e.clientY - offsetY;
+      nav.style.left = `${x}px`;
+      nav.style.top = `${y}px`;
+      nav.style.right = "auto"; // reset right so left works
+      nav.style.bottom = "auto"; // reset bottom so top works
+      nav.style.position = "fixed";
+    });
+
+    document.addEventListener("mouseup", () => {
+      isDragging = false;
+      nav.style.transition = "all 0.3s ease"; // restore smooth transition
+    });
+  </script>
+
+</body>
+</html>
