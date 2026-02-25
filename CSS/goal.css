@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.7;
+  overflow-x: hidden;
+  padding-top: 80px;
+}
+
+/* Header */
+.Header-Sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.left-side {
+  display: flex;
+}
+
+.right-side {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  transform: scale(1.1);
+  color: #00ffcc;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Goals Container */
+.goals-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.page-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    270deg,
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #8f00ff
+  );
+  background-size: 1200% 1200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 7s linear infinite, scalePulse 3s ease-in-out infinite;
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes scalePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Goals Sections */
+.goals-section {
+  margin-bottom: 80px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+}
+
+.timeline-badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.timeline-badge.short-term {
+  background: linear-gradient(90deg, #00ffcc, #00e6b8);
+  color: #000;
+}
+
+.timeline-badge.medium-term {
+  background: linear-gradient(90deg, #ff7f00, #ffed4e);
+  color: #000;
+}
+
+.timeline-badge.long-term {
+  background: linear-gradient(90deg, #8f00ff, #da70d6);
+  color: #fff;
+}
+
+/* Goals Grid */
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 30px;
+}
+
+/* Goal Cards */
+.goal-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  backdrop-filter: blur(10px);
+}
+
+.goal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 255, 204, 0.1);
+  border-color: rgba(0, 255, 204, 0.3);
+}
+
+.goal-card.priority-high {
+  border-left: 4px solid #ff4757;
+}
+
+.goal-card.priority-medium {
+  border-left: 4px solid #ffa502;
+}
+
+.goal-card.priority-low {
+  border-left: 4px solid #3742fa;
+}
+
+.vision-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(138, 43, 226, 0.3);
+}
+
+.vision-card:hover {
+  box-shadow: 0 20px 40px rgba(138, 43, 226, 0.2);
+  border-color: rgba(138, 43, 226, 0.5);
+}
+
+/* Goal Header */
+.goal-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.goal-icon {
+  font-size: 40px;
+  flex-shrink: 0;
+}
+
+.goal-meta {
+  flex: 1;
+}
+
+.goal-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.priority-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.priority-badge.high {
+  background: rgba(255, 71, 87, 0.2);
+  color: #ff4757;
+}
+
+.priority-badge.medium {
+  background: rgba(255, 165, 2, 0.2);
+  color: #ffa502;
+}
+
+.priority-badge.low {
+  background: rgba(55, 66, 250, 0.2);
+  color: #3742fa;
+}
+
+.goal-description {
+  color: #ccc;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Progress Bars */
+.goal-progress {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00ffcc, #ff7f00);
+  border-radius: 4px;
+  width: 0%;
+  transition: width 2s ease-in-out;
+  position: relative;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+.progress-text {
+  font-size: 14px;
+  color: #00ffcc;
+  font-weight: 500;
+}
+
+/* Goal Actions */
+.goal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.action-item {
+  font-size: 14px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Goal Features (for vision cards) */
+.goal-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.feature-item {
+  font-size: 13px;
+  color: #dda0dd;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(138, 43, 226, 0.1);
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(138, 43, 226, 0.2);
+}
+
+/* Current Focus */
+.current-focus {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  margin-top: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.focus-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.focus-item:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 255, 204, 0.1);
+}
+
+.focus-item h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #00ffcc;
+}
+
+.focus-item p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #00ffcc;
+}
+
+.footer p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.footer a {
+  color: #00ffcc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ff7f00;
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .goals-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .page-title {
+    font-size: 36px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .goal-card {
+    padding: 20px;
+  }
+  
+  .focus-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .current-focus {
+    padding: 25px;
+  }
+}
+
+/* Animation Classes */
+.progress-fill.animate {
+  animation: fillBar 2s ease-in-out forwards;
+}
+
+@keyframes fillBar {
+  from { width: 0%; }
+  to { width: var(--target-width); }
+}

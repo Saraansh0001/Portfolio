@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects - Saraansh Gandhi</title>
-  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="CSS/projects.css">
 </head>
 
 <body>
@@ -33,13 +33,13 @@
       <div class="project-card featured">
         <div class="project-image">
           <div class="project-placeholder">
-            <img src="Project1.png" 
+            <img src="PICTURES/Project1.png" 
             alt="This website" 
             style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="project-overlay">
-            <button class="view-project-btn">View Live</button>
-            <button class="view-code-btn">View Code</button>
+            <button class="view-project-btn" data-live-url="#" onclick="window.open(this.dataset.liveUrl, '_blank')">View Live</button>
+            <button class="view-code-btn" data-code-url="https://github.com/Saraansh0001/Portfolio" onclick="window.open(this.dataset.codeUrl, '_blank')">View Code</button>
           </div>
         </div>
         <div class="project-content">
@@ -69,13 +69,12 @@
       <div class="project-card">
         <div class="project-image">
           <div class="project-placeholder">
-            <img src="Project2.jpeg" 
+            <img src="PICTURES/Project2.jpeg" 
             alt="YouTube Clone" 
             style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="project-overlay">
-            <button class="view-project-btn">View Live</button>
-            <button class="view-code-btn">View Code</button>
+            <button class="view-code-btn" data-code-url="https://github.com/Saraansh0001/Youtube-clone" onclick="window.open(this.dataset.codeUrl, '_blank')">View Code</button>
           </div>
         </div>
         <div class="project-content">
@@ -105,7 +104,7 @@
         <div class="project-image">
           <div class="project-placeholder">
             <video
-            src="Project3.mp4"
+            src="PICTURES/Project3.mp4"
             aria-label="Rock Paper Scissors Game"
             style="width:100%; height:100%; object-fit:cover;"
             loop
@@ -115,8 +114,8 @@
 
           </div>
           <div class="project-overlay">
-            <button class="view-project-btn">View Live</button>
-            <button class="view-code-btn">View Code</button>
+            <button class="view-project-btn" data-live-url="https://saraansh0001.github.io/rock-paper-scissor-Game/" onclick="window.open(this.dataset.liveUrl, '_blank')">View Live</button>
+            <button class="view-code-btn" data-code-url="https://github.com/Saraansh0001/rock-paper-scissor-Game" onclick="window.open(this.dataset.codeUrl, '_blank')">View Code</button>
           </div>
         </div>
         <div class="project-content">
@@ -145,81 +144,50 @@
       <div class="project-card">
         <div class="project-image">
           <div class="project-placeholder">
-            <span class="project-icon">✅</span>
+            <span class="project-icon">
+              <img src="PICTURES/KRMU.png" alt="KRMU Hackathon"
+            style="width: 100%; height: 100%; object-fit: cover;">
+            </span>
           </div>
           <div class="project-overlay">
-            <button class="view-project-btn">View Live</button>
-            <button class="view-code-btn">View Code</button>
+            <button class="view-code-btn" data-code-url="https://github.com/Saraansh0001/KRMU-5.0" onclick="window.open(this.dataset.codeUrl, '_blank')">View Code</button>
           </div>
         </div>
         <div class="project-content">
           <div class="project-header">
-            <h3 class="project-title">To Do List</h3>
-            <span class="project-status featured-badge">Planned
+            <h3 class="project-title">Skill Up</h3>
+            <span class="project-status featured-badge">Made In HACK KRMU 5.0
             </span>
           </div>
           <p class="project-description">
-            A basic websitewith due date , add and remove feature to list 
-            your deadlines , and work on them . Majorly focus on JavaScript with a slight touch of 
-            CSS .
+            An AI integrated website that trackjs yout github and linkedin profile ,
+            and suggest you the best courses to upskill yourself according to your profile and interest.
           </p>
           <div class="project-tech">
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Nodejs</span>
+            <span class="tech-tag">BootStrap</span>
+            <span class="tech-tag">Tailwind</span>
           </div>
           <div class="project-features">
             <span class="feature">📋 Task Categories</span>
             <span class="feature">🎯 Priority System</span>
+            
             <span class="feature">📊 Progress Tracking</span>
           </div>
         </div>
       </div>
 
-      <!-- Project 5 - Amazon Clone -->
+      <!-- Project 5 - EzyExplorer -->
       <div class="project-card">
         <div class="project-image">
           <div class="project-placeholder">
-            <span class="project-icon">📚</span>
+            <img src="PICTURES/ezyExplorer.png" 
+            alt="EzyExplorer Website" 
+            style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="project-overlay">
-            <button class="view-project-btn">View Live</button>
-            <button class="view-code-btn">View Code</button>
-          </div>
-        </div>
-        <div class="project-content">
-          <div class="project-header">
-            <h3 class="project-title">Amazon Clone</h3>
-            <span class="project-status">Upcoming
-            </span>
-          </div>
-          <p class="project-description">
-            The Trillion Dollor company clone using advanced JavaScript with fully 
-            functional buttons , updating cart quantity and many more...
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">React</span>
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">MongoDB</span>
-            <span class="tech-tag">Authentication</span>
-          </div>
-          <div class="project-features">
-            <span class="feature">🎓 Course Management</span>
-            <span class="feature">👥 User Profiles</span>
-            <span class="feature">📈 Progress Analytics</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 6 - EzyExplorer -->
-      <div class="project-card">
-        <div class="project-image">
-          <div class="project-placeholder">
-            <span class="project-icon">🎨</span>
-          </div>
-          <div class="project-overlay">
-            <button class="view-project-btn">View Live</button>
-            <button class="view-code-btn">View Code</button>
+            <button class="view-code-btn" data-code-url="https://github.com/Saraansh0001/EzyExplorer1" onclick="window.open(this.dataset.codeUrl, '_blank')">View Code</button>
           </div>
         </div>
         <div class="project-content">
@@ -246,7 +214,43 @@
         </div>
       </div>
 
+      <!-- Project 6 - Amazon Clone -->
+      <div class="project-card">
+        <div class="project-image">
+          <div class="project-placeholder">
+            <span class="project-icon">📚</span>
+          </div>
+          <div class="project-overlay">
+            <button class="view-project-btn" data-live-url="#" onclick="window.open(this.dataset.liveUrl, '_blank')">View Live</button>
+            <button class="view-code-btn" data-code-url="#" onclick="window.open(this.dataset.codeUrl, '_blank')">View Code</button>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">Amazon Clone</h3>
+            <span class="project-status">Upcoming
+            </span>
+          </div>
+          <p class="project-description">
+            The Trillion Dollor company clone using advanced JavaScript with fully 
+            functional buttons , updating cart quantity and many more...
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Authentication</span>
+          </div>
+          <div class="project-features">
+            <span class="feature">🎓 Course Management</span>
+            <span class="feature">👥 User Profiles</span>
+            <span class="feature">📈 Progress Analytics</span>
+          </div>
+        </div>
+      </div>
+
     </div>
+
 
     <!-- Learning Journey Section -->
     <div class="learning-section">
@@ -288,7 +292,7 @@
     </div>
   </div>
 
-  <script src="projects.js"></script>
+  <script src="JS/projects.js"></script>
 
   <footer class="footer">
     <h2>Contact Me</h2>
