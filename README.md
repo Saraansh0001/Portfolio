@@ -18,16 +18,16 @@
 
 ## 📑 Table of Contents
 
-- [✨ Key Features](#key-features)
-- [🛠 Tech Stack](#tech-stack)
-- [💡 Challenges & Solutions](#challenges--solutions)
-- [📚 Project Category](#project-category)
-- [🗺️ Future Roadmap](#roadmap)
-- [🎯 Quick Start](#quick-start)
-- [📂 Project Structure](#project-structure)
-- [🔧 Development & Customization](#development--customization)
-- [❓ FAQ & Troubleshooting](#faq--troubleshooting)
-- [🔗 Connect With Me](#connect-with-me)
+- [✨ Key Features](#-key-features)
+- [🛠 Tech Stack](#-tech-stack)
+- [💡 Challenges & Solutions](#-challenges--solutions)
+- [📚 Project Category](#-project-category)
+- [🗺️ Future Roadmap](#-future-roadmap)
+- [🎯 Quick Start](#-quick-start)
+- [📂 Project Structure](#-project-structure)
+- [🔧 Development & Customization](#-development--customization)
+- [❓ FAQ & Troubleshooting](#-faq--troubleshooting)
+- [🔗 Connect With Me](#-connect-with-me)
 
 ---
 
